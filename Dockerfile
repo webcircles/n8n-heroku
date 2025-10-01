@@ -4,7 +4,7 @@ USER root
 
 WORKDIR /home/node/packages/cli
 
-RUN cd /home/node/packages/cli/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
+RUN mkdir /home/node/packages/cli/.n8n/ && cd /home/node/packages/cli/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
 
 ENTRYPOINT []
 
